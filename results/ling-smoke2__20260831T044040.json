@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "label": "ling-smoke2",
+    "model": "ling-3.0-tiny",
+    "endpoint": "http://100.113.64.18:8020/v1",
+    "utc": "2026-08-31 04:40:40",
+    "note": null,
+    "quant": null,
+    "cluster": null,
+    "ctx": null
+  },
+  "aggregate": {
+    "scenarios": 1,
+    "passed": 0,
+    "partial": 0,
+    "failed": 1,
+    "points": 0,
+    "max_points": 2,
+    "quality": 0.0,
+    "median_turn_latency_ms": 638.7,
+    "responsiveness": 99.3,
+    "deployability": 29.8,
+    "total_tokens": 539,
+    "completion_tokens": 23,
+    "token_efficiency": 0.0,
+    "tok_s_decode": 272.4,
+    "tok_s_effective": 36.0,
+    "stars": 1,
+    "rating": "Poor"
+  },
+  "scenarios": [
+    {
+      "id": "TC-01",
+      "category": "Tool Selection",
+      "verdict": "FAIL",
+      "points": 0,
+      "reason": "Did not call get_weather.",
+      "ttft_ms": 554.3098449707031,
+      "turns": 1,
+      "wall_s": 0.6387910842895508,
+      "prompt_tokens": 516,
+      "completion_tokens": 23,
+      "total_tokens": 539,
+      "turn_latencies_ms": [
+        638.7379169464111
+      ]
+    }
+  ]
+}

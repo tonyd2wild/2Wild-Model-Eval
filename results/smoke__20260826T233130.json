@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "label": "smoke",
+    "model": "qwen3.8-flash-next",
+    "endpoint": "http://100.92.77.51:8000/v1",
+    "utc": "2026-08-26 23:31:30",
+    "note": null,
+    "quant": null,
+    "cluster": null,
+    "ctx": null
+  },
+  "aggregate": {
+    "scenarios": 1,
+    "passed": 1,
+    "partial": 0,
+    "failed": 0,
+    "points": 2,
+    "max_points": 2,
+    "quality": 100.0,
+    "median_turn_latency_ms": 3147.9,
+    "responsiveness": 86.4,
+    "deployability": 95.9,
+    "total_tokens": 1291,
+    "completion_tokens": 45,
+    "token_efficiency": 1.549,
+    "tok_s_decode": 36.3,
+    "tok_s_effective": 7.1,
+    "stars": 5,
+    "rating": "Excellent"
+  },
+  "scenarios": [
+    {
+      "id": "TC-01",
+      "category": "Tool Selection",
+      "verdict": "PASS",
+      "points": 2,
+      "reason": "Used get_weather with Berlin only.",
+      "ttft_ms": 5055.451154708862,
+      "turns": 2,
+      "wall_s": 6.2959160804748535,
+      "prompt_tokens": 1246,
+      "completion_tokens": 45,
+      "total_tokens": 1291,
+      "turn_latencies_ms": [
+        5535.7301235198975,
+        759.9806785583496
+      ]
+    }
+  ]
+}
